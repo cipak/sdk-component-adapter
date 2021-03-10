@@ -28,11 +28,13 @@ describe('Memberships SDK Adapter', () => {
               ID: 'meeting-meetingID',
               destinationID: meetingID,
               destinationType: DestinationType.MEETING,
-              members: [
-                {
-                  id: 'id',
-                },
-              ],
+              members: [{
+                id: 'id',
+                isInMeeting: true,
+              }, {
+                id: 'notJoinedPerson',
+                isInMeeting: false,
+              }],
             });
             done();
           });
