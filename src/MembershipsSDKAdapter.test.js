@@ -36,6 +36,7 @@ describe('Memberships SDK Adapter', () => {
                 isInMeeting: false,
               }],
             });
+            
             done();
           });
       });
